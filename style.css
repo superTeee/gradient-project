@@ -16,7 +16,7 @@
   width: 400px;
   min-width: 400px;
   height: 100vh;
-  background-color: white;
+  background-color: rgb(26, 26, 26);
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@
 
 .fal {
   font-size: 20px;
+  color: white;
 }
 
 .radioGroup {
@@ -60,11 +61,14 @@
 .authorName {
   font-size: 14px;
   margin-left: 10px;
+  color: white;
 }
 
 .intro {
   font-family: "Roboto", sans-serif;
+  font-weight: 200;
   line-height: 1.5em;
+  color: #888;
 }
 
 .bottom {
@@ -81,33 +85,34 @@ button {
   width: 100%;
   cursor: pointer;
   font-size: 17px;
-  font-weight: 600;
-  background-color: white;
+  font-weight: 400;
+  background-color: rgb(26, 26, 26);
   border-style: none;
-  border: 3px solid rgb(40, 40, 40);
-  border-radius: 6px;
-  transition: 0.15s;
+  border: 2px solid rgb(53, 53, 53);
+  border-radius: 4px;
+  transition: 0.1s;
+  color: white;
 }
 
 button:hover {
-  background-color: rgb(42, 42, 42);
   color: white;
-  border: 3px solid rgb(0, 0, 0);
+  border: 2px solid rgb(102, 102, 102);
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 40px;
+  color: rgb(230, 230, 230);
   margin-bottom: 20px;
   margin-top: 60px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.1em;
 }
 
 p {
-  color: #222;
+  color: #fff;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 12px 18px;
   border-radius: 4px;
   font-size: 13px;
@@ -123,7 +128,7 @@ p {
 }
 
 .copy {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -134,16 +139,15 @@ p {
 }
 
 .copy:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(26, 26, 26, 0.9);
   cursor: pointer;
   transition: 0.2s;
-  padding: 36px 36px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .copyText {
   font-size: 14px;
   font-weight: 600;
+  color: white;
 }
 
 .firstContainer {
