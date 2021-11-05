@@ -5,14 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU"
+      crossorigin="anonymous"
+    />
+
     <script src="script.js"></script>
     <title>Gradient project</title>
   </head>
-  <body>
+  <body onload="changeColor()">
     <div class="wrapper">
-      <div class="left"></div>
-      Test
-      <div class="right"></div>
+      <div class="left">
+        <div class="top">
+          <div class="author">
+            <i class="fal fa-laptop-code"></i>
+            <div class="authorName">Tom Erik Heggedal</div>
+          </div>
+          <h1 class="title">
+            CSS Random<br />
+            Gradient
+          </h1>
+          <div class="intro">
+            A playground to generate random gradients with CSS colors. Copy and
+            paste the code and have fun!
+          </div>
+        </div>
+        <div class="bottom">
+          <button type="button" onclick="changeColor()">
+            Make random gradient!
+          </button>
+          <div class="example">
+            .myDiv {<br />
+            background: linear-gradient(45deg, crimson 0%, lightBlue 100%); }
+          </div>
+        </div>
+      </div>
+      <div id="colorContainer">
+        <div class="secondContainer">
+          <p id="secondColor">LightBlue</p>
+        </div>
+        <div class="firstContainer">
+          <p id="firstColor">Crimson</p>
+        </div>
+        <div class="copyContainer">
+          <div class="copy">
+            <i class="fal fa-copy"></i>
+            <div class="copyText">Copy to clipboard</div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
