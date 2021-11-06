@@ -16,6 +16,12 @@ body {
   flex-direction: row;
 }
 
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .left {
   width: 400px;
   min-width: 400px;
@@ -26,8 +32,19 @@ body {
   flex-direction: column;
 }
 
-.fal {
-  font-size: 20px;
+.fa-bars {
+  font-size: 24px;
+  color: white;
+}
+
+.fa-laptop-code {
+  font-size: 22px;
+  color: white;
+}
+
+.fa-copy {
+  font-size: 2.4rem;
+  margin-bottom: 14px;
   color: white;
 }
 
@@ -59,7 +76,6 @@ body {
 .author {
   display: flex;
   margin-bottom: 30px;
-  order: 2;
 }
 
 .authorName {
@@ -159,11 +175,6 @@ p {
   grid-area: first;
 }
 
-.fa-copy {
-  font-size: 2.4rem;
-  margin-bottom: 14px;
-}
-
 .secondContainer {
   grid-area: second;
   display: inline-flex;
@@ -188,10 +199,23 @@ p {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    height: 45vh;
+    height: 40vh;
     width: 100%;
     background: linear-gradient(45deg, crimson 0%, lightBlue 100%);
     order: 1;
+  }
+
+  .fa-laptop-code {
+    font-size: 22px;
+    color: rgb(100, 100, 100);
+  }
+
+  .author {
+    margin-bottom: 20px;
+  }
+
+  .authorName {
+    color: rgb(100, 100, 100);
   }
 
   p {
@@ -200,7 +224,7 @@ p {
 
   .left {
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     min-width: 10px;
     padding: 40px 40px;
     display: flex;
@@ -212,17 +236,31 @@ p {
     flex-grow: 3;
   }
 
+  .copy {
+    padding: 20px 20px;
+    min-width: 20px;
+  }
+
   .example {
     display: none;
   }
 
   button {
     margin-bottom: 40px;
+    border: 2px solid rgb(80, 80, 80);
   }
 
   h1 {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 35px;
+  }
+
+  .intro {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #888;
   }
 }
 
