@@ -123,9 +123,8 @@ button {
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
-  background-color: rgb(26, 26, 26);
+  background-color: #333;
   border-style: none;
-  border: 1px solid grey;
   border-radius: 4px;
   transition: 0.2s;
   color: white;
@@ -133,8 +132,7 @@ button {
 
 button:hover {
   color: white;
-  background-color: #333;
-  border: 1px solid #333;
+  background-color: #444;
 }
 
 h1 {
