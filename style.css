@@ -212,13 +212,17 @@ p {
     order: 1;
   }
 
+  .top-bar {
+    justify-content: flex-end;
+  }
+
   .fa-laptop-code {
     font-size: 18px;
     color: grey;
   }
 
   .author {
-    margin-bottom: 20px;
+    display: none;
   }
 
   .authorName {
