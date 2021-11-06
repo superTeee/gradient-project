@@ -113,7 +113,7 @@ a:hover {
   font-family: "Roboto", sans-serif;
   line-height: 1.4rem;
   letter-spacing: 1px;
-  color: #777;
+  color: dimgrey;
 }
 
 button {
@@ -127,13 +127,14 @@ button {
   border-style: none;
   border: 1px solid grey;
   border-radius: 4px;
-  transition: 0.1s;
+  transition: 0.2s;
   color: white;
 }
 
 button:hover {
   color: white;
-  border: 1px solid white;
+  background-color: #333;
+  border: 1px solid #333;
 }
 
 h1 {
@@ -148,11 +149,10 @@ h1 {
 p {
   color: #fff;
   font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 12px 18px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 16px;
   margin: 50px;
   letter-spacing: 1px;
 }
@@ -165,7 +165,7 @@ p {
 }
 
 .copy {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
