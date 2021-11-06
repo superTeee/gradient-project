@@ -184,32 +184,24 @@ p {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    height: 50vh;
+    height: 45vh;
     width: 100%;
     background: linear-gradient(45deg, crimson 0%, lightBlue 100%);
     order: 1;
   }
 
-  #firstColor {
-    order: 3;
-  }
-
-  .copyContainer {
-    order: 2;
-  }
-
-  #secondColor {
-    order: 1;
-  }
-
   .left {
     width: 100%;
-    height: 50vh;
-    min-height: 430px;
+    height: 55vh;
     min-width: 10px;
     padding: 40px 40px;
     display: flex;
+    align-self: flex-start;
     order: 2;
+  }
+
+  .copyContainer {
+    flex-grow: 3;
   }
 
   .example {
@@ -241,7 +233,7 @@ p {
   }
 
   p {
-    margin: 10px;
+    margin: 20px;
   }
 }
 
