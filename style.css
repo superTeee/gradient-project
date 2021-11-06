@@ -259,7 +259,8 @@ p {
 
   h1 {
     margin-top: 10px;
-    font-size: 38px;
+    font-size: 33px;
+    line-height: 1.2em;
   }
 
   .intro {
