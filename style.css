@@ -45,7 +45,7 @@ a:hover {
   flex-direction: column;
 }
 
-.fa-bars {
+.fa-sliders-h {
   display: none;
   font-size: 28px;
   color: white;
@@ -231,7 +231,7 @@ p {
     color: grey;
   }
 
-  .fa-bars {
+  .fa-sliders-h {
     font-size: 26px;
   }
 
