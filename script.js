@@ -55,6 +55,7 @@ function changeColor() {
   ];
   let randomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
+<<<<<<< HEAD
   if (!firstColorPinned) {
     firstColor = randomColor();
   }
@@ -66,10 +67,15 @@ function changeColor() {
   while (firstColor == secondColor) {
     secondColor = randomColor();
   }
+=======
+  let firstColor = randomColor();
+  let secondColor = randomColor();
+>>>>>>> 79895e02179501ba47e6112bf188734529272b4e
 
   const makeGradientString = (color1, color2) =>
     `linear-gradient(45deg, ${color1} 0%, ${color2} 100%)`;
 
+<<<<<<< HEAD
   document.getElementById("colorContainer").style.background =
     makeGradientString(firstColor, secondColor);
   document.getElementById(
@@ -79,3 +85,14 @@ function changeColor() {
     "secondColor"
   ).innerHTML = `${secondColor} - ${secondColorPinned}`;
 }
+=======
+  //let gradientStyle = makeGradientString(randomColor(), randomColor());
+
+  document.getElementById("colorContainer").style.background =
+    makeGradientString(firstColor, secondColor);
+  document.getElementById("firstColor").innerHTML = `${firstColor}`;
+  document.getElementById("secondColor").innerHTML = `${secondColor}`;
+}
+
+// document.getElementById("colorContainer").style.backgroundColor = randomColor;
+>>>>>>> 79895e02179501ba47e6112bf188734529272b4e
