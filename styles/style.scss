@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: 0.15s;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left {
+  width: 400px;
+  min-width: 400px;
+  height: 100vh;
+  background-color: rgb(26, 26, 26);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-sliders-h {
+  display: none;
+  font-size: 28px;
+  color: white;
+}
+
+.fa-laptop-code {
+  font-size: 22px;
+  color: grey;
+}
+
+.fa-copy {
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+  color: white;
+}
+
+.radioGroup {
+  border-style: none;
+}
+
+#colorContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . second"
+    ". copyCode ."
+    "first . .";
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, crimson 0%, lightBlue 100%);
+}
+
+.author {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.authorName {
+  font-size: 14px;
+  margin-left: 10px;
+  color: grey;
+}
+
+.intro {
+  font-weight: 200;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #888;
+}
+
+.bottom {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.example {
+  font-size: 14px;
+  margin-top: 140px;
+  align-self: flex-end;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4rem;
+  letter-spacing: 1px;
+  color: dimgrey;
+}
+
+button {
+  padding: 14px 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #333;
+  border-style: none;
+  border-radius: 4px;
+  transition: 0.2s;
+  color: white;
+}
+
+button:hover {
+  color: white;
+  background-color: #444;
+}
+
+h1 {
+  font-size: 42px;
+  color: rgb(230, 230, 230);
+  margin-bottom: 20px;
+  margin-top: 60px;
+  font-weight: 500;
+  line-height: 1.1em;
+}
+
+p {
+  color: #fff;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.44);
+  transition: 0.5s ease-out;
+  padding: 12px 18px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 50px;
+  letter-spacing: 1px;
+
+  //span {
+  //}
+
+  &.pinned {
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
+.copyContainer {
+  grid-area: copyCode;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 30px 30px;
+  min-width: 200px;
+}
+
+.copy:hover {
+  background-color: rgba(26, 26, 26, 0.9);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.copyText {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.firstContainer {
+  display: inline-flex;
+  grid-area: first;
+}
+
+.secondContainer {
+  grid-area: second;
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+#secondColor {
+  align-self: flex-start;
+}
+
+#firstColor {
+  align-self: flex-end;
+  order: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  #colorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: calc(45vh - 100px);
+    width: 100%;
+    background: linear-gradient(45deg, crimson 0%, lightBlue 100%);
+    order: 1;
+  }
+
+  .top-bar {
+    justify-content: flex-end;
+  }
+
+  .fa-laptop-code {
+    font-size: 18px;
+    color: grey;
+  }
+
+  .fa-sliders-h {
+    font-size: 26px;
+  }
+
+  .author {
+    display: none;
+  }
+
+  .authorName {
+    color: grey;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .left {
+    width: 100%;
+    height: 55vh;
+    min-width: 10px;
+    padding: 34px;
+    display: flex;
+    align-self: flex-start;
+    order: 2;
+  }
+
+  .copyContainer {
+    flex-grow: 3;
+  }
+
+  .copy {
+    padding: 20px 20px;
+    min-width: 20px;
+  }
+
+  .example {
+    display: none;
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin-top: 0px;
+    font-size: 33px;
+    line-height: 1.2em;
+  }
+
+  .intro {
+    font-size: 17px;
+    line-height: 1.6em;
+    color: grey;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .copyText {
+    display: none;
+  }
+  .copy {
+    padding: 30px 30px;
+    min-width: 20px;
+  }
+
+  .fa-copy {
+    font-size: 2.2rem;
+    margin-bottom: 0px;
+  }
+
+  p {
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .left {
+    min-width: 460px;
+  }
+}
